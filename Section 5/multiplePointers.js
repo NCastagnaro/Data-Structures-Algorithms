@@ -1,17 +1,4 @@
-//Naive Solution
-//sumZero([-3,-2,-1,0,1,2,3])
-function sumZero(arr){
-    for(let i = 0; i < arr.length; i++){
-        for(let j = i+1; j < arr.length; j++){
-            if(i + j ==0){
-            return (arr[i],arr[j]);
-            }
-        }
-    }
-}
-
-
-//Refactored Solution
+//sumZero([-4,-3,-2,-1,0,1,2,3,10]) should return [-3,3]
 function sumZero(arr){
     let left = 0; 
     let right = arr.length - 1; 
@@ -29,8 +16,6 @@ function sumZero(arr){
     }
 }
 
-
-//[-4,-3,-2,-1,0,1,2,3,10] should return [-3,3]
 //Time complexity - O(N)
 //Space complexity - O(1)
 
