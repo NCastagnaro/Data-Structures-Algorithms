@@ -10,9 +10,10 @@ function maxSubarraySum(arr,num){
     //The first three numbers, 2 + 6 + 9 = 17 for our current maxSum value. 
     //We store this maxSum value in a variable called tempSum
     tempSum = maxSum; 
-    for(let i = num; i < arr.length; i++){          //The index of i starts at the num value. In other words, we start where our first for loop left off. 
-        tempSum = tempSum - arr[i - num] + arr[i];  //15 - arr[3-3] + arr[3] on first iteration
-        maxSum = Math.max(maxSum, tempSum);
+    for(let i = num; i < arr.length; i++){          //The index of i starts at the num value. In other words, we start where our first for loop left off and we iterate as long we are less than the array length.
+        tempSum = tempSum - arr[i - num] + arr[i];  
+        maxSum = Math.max(maxSum, tempSum);         //takes the max value between maxSum and tempSum. And we store it in a variable maxSum. maxSum only gets updated if 
+                                                    //tempSum(the value for the summation of values of the window on that iteration) is greater than maxSum
     }
     return maxSum;
 }
