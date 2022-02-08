@@ -60,5 +60,4 @@ function similarNumber(num1,num2){
 }
 
 
-//test
 
