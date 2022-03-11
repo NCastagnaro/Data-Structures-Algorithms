@@ -17,9 +17,6 @@ function validAnagram(word1,word2){
     }
 
     for(let key in frequencyCounter1){
-        if(!(key in frequencyCounter2)){
-            return false;
-        }
         if(frequencyCounter2[key] !== frequencyCounter1[key]){
             return false;
         }
@@ -49,9 +46,6 @@ function similarNumber(num1,num2){
     }
 
     for(let key in frequencyCounter1){
-        /*if(!(key in frequencyCounter2)){
-            return false;
-        }*/
         if(frequencyCounter2[key] !== frequencyCounter1[key]){
             return false;
         }
