@@ -3,8 +3,7 @@ function validAnagram(word1,word2){
     if(word1.length !== word1.length){
         return false;
     }
-
-
+    
     let frequencyCounter1 = {};
     let frequencyCounter2 = {};
 
@@ -17,7 +16,7 @@ function validAnagram(word1,word2){
     }
 
     for(let key in frequencyCounter1){
-        if(frequencyCounter2[key] !== frequencyCounter1[key]){
+        if(frequencyCounter1[key] !== frequencyCounter2[key]){
             return false;
         }
     }
