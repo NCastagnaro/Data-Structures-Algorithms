@@ -40,7 +40,7 @@ second iteration:
 
 third iteration:
 [2,6,9,3,1,8,5,6,3]   tempSum = tempSum - arr[i-num] + arr[i];
-       -   -          tempSum = 13 - arr[5-3] + arr[5]
+     -   -            tempSum = 13 - arr[5-3] + arr[5]
                       tempSum = 13 - 9 + 8
                       tempSum = 12
                       maxSum ==18, tempSum for this iteration == 12. We take the max and store it in maxSum variable. maxSum remains 18.
