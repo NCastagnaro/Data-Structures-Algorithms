@@ -29,12 +29,12 @@ maxSubarraySum([2,6,9,3,1,8,5,6,3],3) //should return 19
 first iteration: 
 [2,6,9,2,1,8,5,6,3]   tempSum = tempSum - arr[i-num] + arr[i];
  -   -                tempSum = 17      - arr[3-3]    + arr[3]
-                      tempSum = 17 -2 + 3
+                      tempSum = 17 -2 + 2
                       maxSum ==17, tempSum fo this iteration ==18. We take the max and store it in maxSum variable. maxSum variable gets updated to be 18
 
 second iteration:
 [2,6,9,3,1,8,5,6,3]   tempSum = tempSum - arr[4-3] + arr[4]
-     -   -            tempSum = 18 - 6 + 1 
+   -   -              tempSum = 18 - 6 + 1 
                       tempSum = 13 
                       maxSum == 18, tempSum for this iteration == 13. We take the max and store it in maxSum variable. maxSum remains 18
 
