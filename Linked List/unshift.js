@@ -59,7 +59,7 @@ class SinglyLinkedList{
        // return currentHead;
     }
 
-    unshift(){
+    unshift(val){
        let newNode = new Node(val);     
        if(!this.head){                  //if the list is empty
            this.head = newNode;         //set the unshifted value to be the head
